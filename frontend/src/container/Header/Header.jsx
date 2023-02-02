@@ -29,16 +29,26 @@ const Header = () => {
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
             <span>👋</span>
-            <div style={{marginLeft: 20}}>
-              <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Diego</h1>
-            </div>
+            <motion.div 
+              whileInView={{opacity:1}}
+              whileHover={{scale: 1.1}}
+              transition={{duration: 0.5, type:'spring'}}
+              style={{marginLeft: 20}}
+            >
+              <p className="p-text">Hey there, I am</p>
+              <h1 className="head-text">&lt;Diego/&gt;</h1>
+            </motion.div>
           </div>
 
-          <div className="tag-cmp app__flex">
+          <motion.div 
+            whileInView={{opacity:1}}
+            whileHover={{scale: 1.3}}
+            transition={{duration: 0.5, type:'keyframes'}}
+            className="tag-cmp app__flex"
+          >
           <p className="p-text">Software Engineer</p>
           <p className="p-text">Full-Stack Developer</p>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
       
@@ -47,7 +57,7 @@ const Header = () => {
       transition={{duration: 0.5, delayChildren: 0.5}}
       className="app__header-img"
       >
-        <img src={images.profile} alt="profile_background" />
+        <img style={{}} src={images.dig} alt="profile_background" />
         <motion.img
         whileInView={{scale: [0,1]}} 
         transition={{duration: 1, ease: 'easeInOut'}}
@@ -62,10 +72,15 @@ const Header = () => {
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
       >
-        {[images.flutter, images.redux, images.sass].map((circle,index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
+        {[images.python, images.react, images.solidity].map((circle,index) => (
+          <motion.div 
+            whileInView={{opacity:1}}
+            whileHover={{scale: 1.2}}
+            transition={{duration: 0.5, type:'keyframes'}}
+            className="circle-cmp app__flex" key={`circle-${index}`}
+          >
             <img src={circle} alt="circle" />
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>

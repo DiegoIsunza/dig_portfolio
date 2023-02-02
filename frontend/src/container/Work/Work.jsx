@@ -45,10 +45,10 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative<span>Portfolio</span>Section</h2>
+      <h2 className="head-text">My Creative <span> Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item,index) => (
+        {['Crypto','Data Science','Python', 'Web App', 'Mobile App', 'React JS', 'All'].map((item,index) => (
           <div
           key={index}
           onClick={()=> handleWorkFilter(item)}
@@ -85,7 +85,7 @@ const Work = () => {
                 </motion.div>
                 </a>
 
-                <a href={work.projectLink} target="_blank" rel="noreferer">
+                <a href={work.codeLink} target="_blank" rel="noreferer">
                 <motion.div
                 whileInView={{scale:[0,1]}}
                   whileHover={{scale:[1,0.9]}}
