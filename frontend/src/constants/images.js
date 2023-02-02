@@ -6,7 +6,6 @@ import css from '../assets/css.png';
 import figma from '../assets/figma.png';
 import flutter from '../assets/flutter.png';
 import git from '../assets/git.png';
-import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
 import mu5 from '../assets/mu5.png';
@@ -36,6 +35,9 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import solidity from '../assets/solidity.png';
 import dig from '../assets/dig.png';
+import logo_2 from '../assets/logo_2.png';
+import logo_no_bg from '../assets/logo_no_bg.png';
+
 
 export default {
   email,
@@ -46,7 +48,6 @@ export default {
   figma,
   flutter,
   git,
-  graphql,
   html,
   javascript,
   mu5,
@@ -73,4 +74,6 @@ export default {
   spotify,
   solidity,
   dig,
+  logo_2,
+  logo_no_bg,
 };
